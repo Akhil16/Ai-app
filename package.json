@@ -1,0 +1,20 @@
+{
+  "name": "ai-app",
+  "version": "1.0.0",
+  "description": "tenserflow based app using google's pretrained models",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "tsc",
+    "pack": "ncc build ./src/index.ts -o dist",
+    "all": "npm run build && npm run pack"
+  },
+  "author": "Akhil",
+  "license": "MIT",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.10.0",
+    "typescript": "^5.1.6"
+  },
+  "devDependencies": {
+    "@types/node": "^20.4.8"
+  }
+}
